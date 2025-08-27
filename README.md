@@ -8,6 +8,8 @@ Darknet OSINT Recon Probe - is a comprehensive open-source intelligence tool wit
 # Table of Contents
 
 - Overview
+
+- Virtual Environment
   
 - Installation & Dependencies
   
@@ -24,6 +26,15 @@ Darknet OSINT Recon Probe - is a comprehensive open-source intelligence tool wit
 # Overview
 
 Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 18 modules for digital reconnaissance and cybersecurity analysis. Built with Python, it provides a unified interface for various OSINT techniques.
+
+- - - 
+
+# Create your virtual environment:
+
+- virtual env
+- source my_temp_venv/bin/activate
+
+
 
 - - - 
 
@@ -72,193 +83,207 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 
 **1. Image Geolocation**
 
-- Purpose: Extract GPS metadata from images
+- **Purpose**: Extract GPS metadata from images
 
-# Example: Analyze travel photos for location data
+#### Example: Analyze travel photos for location data
 
-# Input: path/to/image.jpg
+#### Input: path/to/image.jpg
 
-# Output: Coordinates and Google Maps link ( if any )
+#### Output: Coordinates and Google Maps link ( if any )
 
+- - - 
 
 **2. Social Media Deep Dive**
 
-- Purpose: Find profiles across 30+ platforms
+- **Purpose**: Find profiles across 30+ platforms
 
 
-# Example: Investigate username "johnsmith"
+#### Example: Investigate username "johnsmith"
 
-# Input: username
+#### Input: username
 
-# Output: List of profile URLs across social media
+#### Output: List of profile URLs across social media
 
+- - - 
 
 **3. Email Breach & Source Sweep**
 
-- Purpose: Check email breaches and pastebin exposure
+- **Purpose**: Check email breaches and Pastebin exposure
 
+#### Example: Verify email security
 
-# Example: Verify email security
+#### Input: email@example.com  
 
-# Input: email@example.com  
+#### Output: Breach history and exposed instances
 
-# Output: Breach history and exposed instances
-
+- - - 
 
 **4. Email Verification & Intel**
 
-- Purpose: Validate email existence and gather intelligence
+- **Purpose**: Validate email existence and gather intelligence
 
 
-# Example: Verify professional email
+#### Example: Verify professional email
 
-# Input: name@company.com
+#### Input: name@company.com
 
-# Output: Validation results and associated domains
+#### Output: Validation results and associated domains
 
+- - - 
 
 **5. Domain Intelligence**
 
-- Purpose: Comprehensive domain analysis
+- **Purpose**: Comprehensive domain analysis
 
 
-# Example: Investigate suspicious domain
+#### Example: Investigate suspicious domain
 
-# Input: example.com
+#### Input: example.com
 
-# Output: WHOIS data, DNS records, subdomains
+#### Output: WHOIS data, DNS records, subdomains
 
+- - - 
 
 **6. Metadata Extraction**
 
-- Purpose: Extract EXIF and file metadata
+- **Purpose**: Extract EXIF and file metadata
 
 
-# Example: Analyze document metadata
+#### Example: Analyze document metadata
 
-# Input: document.pdf
+##### Input: document.pdf
 
-# Output: Creation dates, author, software used
+#### Output: Creation dates, author, software used
 
+- - - 
 
 **7. Google Dorking**
 
-- Purpose: Advanced search techniques
+- **Purpose**: Advanced search techniques
 
 
-# Example: Find exposed documents
+#### Example: Find exposed documents
 
-# Input: "site:company.com filetype:pdf"
+#### Input: "site:company.com filetype:pdf"
 
-# Output: Google search results
+#### Output: Google search results
+
+- - - 
+
+**8. Instagram Recon**
+
+- **Purpose**: Profile investigation
 
 
-8. Instagram Recon
+#### Example: Analyze public profile
 
-- Purpose: Profile investigation
+#### Input: username
 
+#### Output: Profile information and statistics
 
-# Example: Analyze public profile
-
-# Input: username
-
-# Output: Profile information and statistics
-
+- - - 
 
 **9. Port Scan**
 
-- Purpose: Network reconnaissance
+- **Purpose**: Network reconnaissance
 
 
-# Example: Check server security
+#### Example: Check server security
 
-# Input: example.com OR 192.168.1.1
+#### Input: example.com OR 192.168.1.1
 
-# Output: Open ports and services
+#### Output: Open ports and services
 
+- - - 
 
 **10. GitHub Recon**
 
-- Purpose: Developer intelligence
+- **Purpose**: Developer intelligence
 
 
-# Example: Research developer activity
+#### Example: Research developer activity
 
-# Input: github_username
+#### Input: github_username
 
-# Output: Profile info, repositories, activity
+#### Output: Profile info, repositories, activity
 
+- - - 
 
 **11. Website Metadata Scraper**
 
-- Purpose: Extract website data
+- **Purpose**: Extract website data
 
 
-# Example: Analyze multiple websites
+#### Example: Analyze multiple websites
 
-# Input: urls.txt file with target URLs
+#### Input: urls.txt file with target URLs
 
-# Output: Metadata, emails, entities in JSON/CSV
+#### Output: Metadata, emails, entities in JSON/CSV
 
+- - - 
 
 **12. Phone Number Recon**
 
-- Purpose: Phone intelligence
+- **Purpose**: Phone intelligence
 
 
-# Example: Verify phone number
+#### Example: Verify phone number
 
-# Input: +1234567890
+#### Input: +1234567890
 
-# Output: Carrier, location, validation
+#### Output: Carrier, location, validation
 
+- - - 
 
 **13. Reverse Image Search**
 
-- Purpose: Image investigation
+- **Purpose**: Image investigation
 
 
-# Example: Find image sources
+#### Example: Find image sources
 
-# Input: (Opens multiple search engines)
+#### Input: (Opens multiple search engines)
 
-# Output: Browser opens with search results
+#### Output: Browser opens with search results
 
+- - - 
 
 **14. Geospatial Intelligence**
 
-- Purpose: Location analysis
+- **Purpose**: Location analysis
 
 
-# Example: Map coordinates
+#### Example: Map coordinates
 
-# Input: 40.7128,-74.0060 OR "New York City"
+#### Input: 40.7128,-74.0060 OR "New York City"
 
-# Output: Satellite and map views
+#### Output: Satellite and map views
 
+- - - 
 
 **15. Wayback Machine**
 
-- Purpose: Historical website data
+- **Purpose**: Historical website data
 
 
-# Example: Archive research
+#### Example: Archive research
 
-# Input: https://example.com
+#### Input: https://example.com
 
-# Output: Historical snapshots and changes
+#### Output: Historical snapshots and changes
 
+- - - 
 
 **16. IP Blacklist Check**
 
-- Purpose: IP reputation analysis
+- **Purpose**: IP reputation analysis
 
 
-# Example: Check suspicious IP
+#### Example: Check suspicious IP
 
-# Input: 192.168.1.100
+#### Input: 192.168.1.100
 
-# Output: Geolocation and abuse reports
+#### Output: Geolocation and abuse reports
 
 - - - 
 
@@ -273,3 +298,131 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 **Get it**: https://github.com/settings/tokens
 
 **Scopes**: repo, read:org, read:user, user:email
+
+
+**2. Have I Been Pwned (Recommended)**
+
+**Purpose**: Email breach checking
+
+**Get it**: https://haveibeenpwned.com/API/Key
+
+**Free tier**: 1 request/1.5 seconds
+
+
+**3. AbuseIPDB (Optional)**
+
+**Purpose**: IP reputation checking
+
+**Get it**: https://www.abuseipdb.com/api
+
+**Free tier**: 1,000 requests/day
+
+
+# Setup Commands:
+
+
+# Linux/macOS
+
+    export GITHUB_TOKEN='your_token_here'
+    export HIBP_API_KEY='your_key_here'
+    export ABUSEIPDB_KEY='your_key_here'
+
+
+- - - 
+
+# Ethical Considerations
+
+#### Legal Compliance:
+
+- Use only on systems you own or have explicit permission to test
+
+- Comply with local laws and regulations
+
+- Respect terms of service of online platforms
+
+- Use for legitimate security research only
+  
+#### Prohibited Activities:
+
+- Unauthorized access to systems
+
+- Harassment or stalking individuals
+
+- Commercial exploitation without permission
+
+- Data scraping violating ToS
+
+- Any illegal activities
+
+#### Responsible Disclosure:
+
+- Report vulnerabilities to affected parties
+  
+- Allow reasonable time for fixes
+  
+- Do not expose sensitive data publicly
+  
+- Follow responsible disclosure guidelines
+
+#### Bug Reports & Contributions
+
+**Reporting Issues**:
+
+1. Check existing issues on GitHub
+  
+2. Create detailed bug report including:
+   
+- OS and Python version
+  
+- Exact error messages
+  
+- Steps to reproduce
+  
+- Expected vs actual behavior
+  
+#### Contribution Guidelines:
+
+1. Fork the repository
+
+2. Create feature branch
+
+3. Follow existing code style
+
+4. Add tests for new features
+
+5. Submit pull request with description
+
+#### Feature Requests:
+
+- Suggest new modules or improvements
+
+- Provide use cases and examples
+
+- Consider implementation complexity
+
+#### Support
+
+**Documentation**:
+
+- Video tutorials on YouTube…
+
+- Example usage scenarios…
+Community:
+
+**Discord community**:…
+GitHub Discussions for questions
+
+**Troubleshooting**:
+
+- Check all dependencies are installed
+  
+- Verify API keys are correctly set
+
+- Ensure sufficient permissions
+
+- Check internet connectivity
+
+- - - 
+
+**Disclaimer**: This tool is for educational and authorized security testing purposes only. I am not responsible for misuse of this tool. Always obtain proper authorization before conducting any security assessments.
+
