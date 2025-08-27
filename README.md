@@ -1,2 +1,275 @@
-# MASTER-OSINTv4-
+# MASTER-OSINTv4
+
 Darknet OSINT Recon Probe - is a comprehensive open-source intelligence tool with 18 modules for digital reconnaissance and cybersecurity analysis. Built with Python, it provides a unified interface for various OSINT techniques.
+
+
+- - - 
+
+# Table of Contents
+
+- Overview
+  
+- Installation & Dependencies
+  
+- Module Guide
+  
+- API Setup
+  
+- Ethical Considerations
+  
+- Bug Reports & Contributions
+
+- - - 
+
+# Overview
+
+Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 18 modules for digital reconnaissance and cybersecurity analysis. Built with Python, it provides a unified interface for various OSINT techniques.
+
+- - - 
+
+# Installation & Dependencies
+
+**Prerequisites**:
+
+- Python 3.7+
+  
+- pip (Python package manager)
+
+**Installation Steps**:
+
+# 1. Install required dependencies:
+
+    pip install requests beautifulsoup4 waybackpy spacy phonenumbers python-whois dnspython exifread tldextract
+
+# 2. Download spaCy language model:
+
+    python -m spacy download en_core_web_sm
+
+# 3. Make executable (Linux/macOS)
+
+    chmod +x master_osintv4.py
+
+# 4. Run the tool
+
+    python master_osintv4.py
+
+
+**Optional API Setup**
+
+
+**Set environment variables for enhanced functionality**:
+
+    export GITHUB_TOKEN='your_github_token_here'
+
+    export HIBP_API_KEY='your_hibp_api_key_here' 
+    
+    export ABUSEIPDB_KEY='your_abuseipdb_key_here'
+
+
+- - - 
+
+# Module Guide
+
+**1. Image Geolocation**
+
+- Purpose: Extract GPS metadata from images
+
+# Example: Analyze travel photos for location data
+
+# Input: path/to/image.jpg
+
+# Output: Coordinates and Google Maps link ( if any )
+
+
+**2. Social Media Deep Dive**
+
+- Purpose: Find profiles across 30+ platforms
+
+
+# Example: Investigate username "johnsmith"
+
+# Input: username
+
+# Output: List of profile URLs across social media
+
+
+**3. Email Breach & Source Sweep**
+
+- Purpose: Check email breaches and pastebin exposure
+
+
+# Example: Verify email security
+
+# Input: email@example.com  
+
+# Output: Breach history and exposed instances
+
+
+**4. Email Verification & Intel**
+
+- Purpose: Validate email existence and gather intelligence
+
+
+# Example: Verify professional email
+
+# Input: name@company.com
+
+# Output: Validation results and associated domains
+
+
+**5. Domain Intelligence**
+
+- Purpose: Comprehensive domain analysis
+
+
+# Example: Investigate suspicious domain
+
+# Input: example.com
+
+# Output: WHOIS data, DNS records, subdomains
+
+
+**6. Metadata Extraction**
+
+- Purpose: Extract EXIF and file metadata
+
+
+# Example: Analyze document metadata
+
+# Input: document.pdf
+
+# Output: Creation dates, author, software used
+
+
+**7. Google Dorking**
+
+- Purpose: Advanced search techniques
+
+
+# Example: Find exposed documents
+
+# Input: "site:company.com filetype:pdf"
+
+# Output: Google search results
+
+
+8. Instagram Recon
+
+- Purpose: Profile investigation
+
+
+# Example: Analyze public profile
+
+# Input: username
+
+# Output: Profile information and statistics
+
+
+**9. Port Scan**
+
+- Purpose: Network reconnaissance
+
+
+# Example: Check server security
+
+# Input: example.com OR 192.168.1.1
+
+# Output: Open ports and services
+
+
+**10. GitHub Recon**
+
+- Purpose: Developer intelligence
+
+
+# Example: Research developer activity
+
+# Input: github_username
+
+# Output: Profile info, repositories, activity
+
+
+**11. Website Metadata Scraper**
+
+- Purpose: Extract website data
+
+
+# Example: Analyze multiple websites
+
+# Input: urls.txt file with target URLs
+
+# Output: Metadata, emails, entities in JSON/CSV
+
+
+**12. Phone Number Recon**
+
+- Purpose: Phone intelligence
+
+
+# Example: Verify phone number
+
+# Input: +1234567890
+
+# Output: Carrier, location, validation
+
+
+**13. Reverse Image Search**
+
+- Purpose: Image investigation
+
+
+# Example: Find image sources
+
+# Input: (Opens multiple search engines)
+
+# Output: Browser opens with search results
+
+
+**14. Geospatial Intelligence**
+
+- Purpose: Location analysis
+
+
+# Example: Map coordinates
+
+# Input: 40.7128,-74.0060 OR "New York City"
+
+# Output: Satellite and map views
+
+
+**15. Wayback Machine**
+
+- Purpose: Historical website data
+
+
+# Example: Archive research
+
+# Input: https://example.com
+
+# Output: Historical snapshots and changes
+
+
+**16. IP Blacklist Check**
+
+- Purpose: IP reputation analysis
+
+
+# Example: Check suspicious IP
+
+# Input: 192.168.1.100
+
+# Output: Geolocation and abuse reports
+
+- - - 
+
+# API Setup
+
+**Required APIs for Full Functionality**:
+
+**1. GitHub Token** (Optional but recommended)
+
+**Purpose**: Higher rate limits for GitHub reconnaissance
+
+**Get it**: https://github.com/settings/tokens
+
+**Scopes**: repo, read:org, read:user, user:email
