@@ -56,6 +56,17 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 
     python -m spacy download en_core_web_sm
 
+# 3. Tool Installation
+
+- Connect via the link and install the the tool script manually using nano: **https://gist.github.com/techenthusiast167/45d802b026830981106af3b017c2e36d**
+  
+- **Example**:
+
+      nano master_osintv4.py
+  
+- Press **Ctrl + O, Enter, and Ctrl + X** to save and exit
+
+
 # 3. Make executable (Linux/macOS)
 
     chmod +x master_osintv4.py
