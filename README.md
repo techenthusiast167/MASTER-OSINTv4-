@@ -31,7 +31,7 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 
 # Create your virtual environment:
 
-- virtual env
+- virtualenv my_temp_venv
 - source my_temp_venv/bin/activate
 
 
