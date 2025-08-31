@@ -59,8 +59,10 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 # 3. Tool Installation
 
 - Connect via the links below **(choose any version you want)** and install the the tool script manually using nano:
+  
 - **https://gist.github.com/techenthusiast167/45d802b026830981106af3b017c2e36d** - v4
 - **https://gist.github.com/techenthusiast167/543719b32253663ed5b9d406ba8affef** - v5
+- **https://gist.github.com/techenthusiast167/26484f737dc76841e7bdc11a6199a781** - v6
   
 - **Example**:
 
