@@ -1,4 +1,4 @@
-# MASTER-OSINT - V4 - V5 - V6
+# MASTER-OSINT: V4 - V5 - V6
 
 Darknet OSINT Recon Probe - is a comprehensive open-source intelligence tool with 18 modules for digital reconnaissance and cybersecurity analysis. Built with Python, it provides a unified interface for various OSINT techniques.
 
@@ -60,9 +60,11 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 
 - Connect via the links below **(choose any version you want)** and install the the tool script manually using nano:
   
-- **https://gist.github.com/techenthusiast167/45d802b026830981106af3b017c2e36d** - v4
-- **https://gist.github.com/techenthusiast167/543719b32253663ed5b9d406ba8affef** - v5
-- **https://gist.github.com/techenthusiast167/26484f737dc76841e7bdc11a6199a781** - v6
+**MASTER OSINT V4: https://gist.github.com/techenthusiast167/45d802b026830981106af3b017c2e36d** 
+
+**MASTER OSINT V5: https://gist.github.com/techenthusiast167/543719b32253663ed5b9d406ba8affef** - 
+
+**MASTER OSINT V6: https://gist.github.com/techenthusiast167/26484f737dc76841e7bdc11a6199a781** 
   
 - **Example**:
 
@@ -249,7 +251,7 @@ enumeration, and subdomain discovery
 
 **Example**:
 
-**Give domain or URL: example.com**
+**Give domain or URL**: example.com
 
 --- WHOIS Information ---
 Registrar    : GoDaddy.com, LLC
@@ -322,7 +324,7 @@ Software                      : Adobe Photoshop 2023
 
 **Example**:
 
-Your dork query: site:example.com filetype:pdf "confidential"
+**Your dork query**: site:example.com filetype:pdf "confidential"
 Deploying search...
 [Opens Google with: site:example.com filetype:pdf "confidential"]
 
@@ -583,7 +585,7 @@ Opening OpenStreetMap view...
 
 **Example**:
 
-**Enter URL (include http/https): https**://example.com
+**Enter URL (include http/https)**: https://example.com
 
 [+] 1247 archives located. Listing top 10:
  [1] http://web.archive.org/web/20230115000000/https://example.com (Captured: 2023-01-15 00:00:00, HTTP 200)
@@ -599,7 +601,7 @@ Opening OpenStreetMap view...
 
 **Module 16: IP GeoBlacklist Recon**
 
-**Purpose£*: IP address investigation and reputation checking.
+**Purpose**: IP address investigation and reputation checking.
 
 **How to Use**:
 
@@ -628,7 +630,7 @@ Abuse Confidence Score : 0%
 Total Reports (90d)    : 0
 Status                 : No significant abuse reports
 
-£*Practical Applications**:
+**Practical Applications**:
 
 - IP reputation checking
 - Threat intelligence
@@ -732,7 +734,7 @@ Avg Hot Comments: 42.15
 
 **Module 20: EXIT THE MATRIX**
 
-+*Purpose**: Cleanly exit the application.
+**Purpose**: Cleanly exit the application.
 
 **How to Use**:
 
@@ -744,6 +746,7 @@ Avg Hot Comments: 42.15
 
 - Exiting DARKNET OSINT SUITE. Stay concealed, operator.
 
+- - - 
 - - - 
 
 # API Setup
