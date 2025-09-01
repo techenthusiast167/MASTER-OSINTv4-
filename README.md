@@ -783,7 +783,7 @@ Avg Hot Comments: 42.15
 # Setup Commands:
 
 
-# Linux/macOS
+# Linux
 
     export GITHUB_TOKEN='your_token_here'
     export HIBP_API_KEY='your_key_here'
@@ -803,6 +803,8 @@ Avg Hot Comments: 42.15
 - Respect terms of service of online platforms
 
 - Use for legitimate security research only
+
+- - - 
   
 #### Prohibited Activities:
 
@@ -816,6 +818,8 @@ Avg Hot Comments: 42.15
 
 - Any illegal activities
 
+- - - 
+
 #### Responsible Disclosure:
 
 - Report vulnerabilities to affected parties
@@ -826,7 +830,9 @@ Avg Hot Comments: 42.15
   
 - Follow responsible disclosure guidelines
 
-#### Bug Reports & Contributions
+- - - 
+
+# Bug Reports & Contributions
 
 **Reporting Issues**:
 
@@ -841,6 +847,8 @@ Avg Hot Comments: 42.15
 - Steps to reproduce
   
 - Expected vs actual behavior
+
+- - - 
   
 #### Contribution Guidelines:
 
@@ -854,6 +862,8 @@ Avg Hot Comments: 42.15
 
 5. Submit pull request with description
 
+- - - 
+
 #### Feature Requests:
 
 - Suggest new modules or improvements
@@ -861,18 +871,7 @@ Avg Hot Comments: 42.15
 - Provide use cases and examples
 
 - Consider implementation complexity
-
-#### Support
-
-**Documentation**:
-
-- Video tutorials on YouTube…
-
-- Example usage scenarios…
-Community:
-
-**Discord community**:…
-GitHub Discussions for questions
+- - - 
 
 **Troubleshooting**:
 
