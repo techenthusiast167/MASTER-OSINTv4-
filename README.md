@@ -96,212 +96,61 @@ Darknet OSINT Recon Probe is a comprehensive open-source intelligence tool with 
 
 # Module Guide
 
-**1. Image Geolocation**
+**Module 1: Image Geolocation (EXIF & Tactical Analysis)**
 
-- **Purpose**: Extract GPS metadata from images
+**Purpose**: Extract GPS coordinates and metadata from images to determine where a photo was taken and with what device.
 
-#### Example: Analyze travel photos for location data
+**How to Use**:
 
-#### Input: path/to/image.jpg
+1. Select option 1 from the main menu
 
-#### Output: Coordinates and Google Maps link ( if any )
+2. Provide the path to an image file (JPEG, PNG, etc.)
 
+3. The tool extracts EXIF data including GPS coordinates if available
+
+4. If coordinates are found, it provides a Google Maps link
+
+**Example**:
+
+**Enter path to the target image**: /home/user/suspect_photo.jpg
+
+  - Coordinates extracted:
+  - Latitude: 40.7589
+  - Longitude: -73.9851
+
+  - Locate on Google Maps: https://www.google.com/maps/search/?api=1&query=40.7589,-73.9851
+
+**Practical Applications**:
+
+- Verifying location claims in investigations
+
+- Geotagging evidence for legal cases
+
+- Identifying camera sources in media analysis
+  
 - - - 
 
-**2. Social Media Deep Dive**
+**Module 2: Social Media Deep Dive**
 
-- **Purpose**: Find profiles across 30+ platforms
+**Purpose**: Cross-platform username investigation across 30+ social media platforms.
 
+**How to Use**:
 
-#### Example: Investigate username "johnsmith"
+1. Select option 2 from the main menu
 
-#### Input: username
+2. Enter a username to investigate
 
-#### Output: List of profile URLs across social media
+3. Tool generates links to check that username across all platforms
 
-- - - 
+**Example**:
 
-**3. Email Breach & Source Sweep**
+**Enter target username**: john_doe123
 
-- **Purpose**: Check email breaches and Pastebin exposure
-
-#### Example: Verify email security
-
-#### Input: email@example.com  
-
-#### Output: Breach history and exposed instances
-
-- - - 
-
-**4. Email Verification & Intel**
-
-- **Purpose**: Validate email existence and gather intelligence
-
-
-#### Example: Verify professional email
-
-#### Input: name@company.com
-
-#### Output: Validation results and associated domains
-
-- - - 
-
-**5. Domain Intelligence**
-
-- **Purpose**: Comprehensive domain analysis
-
-
-#### Example: Investigate suspicious domain
-
-#### Input: example.com
-
-#### Output: WHOIS data, DNS records, subdomains
-
-- - - 
-
-**6. Metadata Extraction**
-
-- **Purpose**: Extract EXIF and file metadata
-
-
-#### Example: Analyze document metadata
-
-##### Input: document.pdf
-
-#### Output: Creation dates, author, software used
-
-- - - 
-
-**7. Google Dorking**
-
-- **Purpose**: Advanced search techniques
-
-
-#### Example: Find exposed documents
-
-#### Input: "site:company.com filetype:pdf"
-
-#### Output: Google search results
-
-- - - 
-
-**8. Instagram Recon**
-
-- **Purpose**: Profile investigation
-
-
-#### Example: Analyze public profile
-
-#### Input: username
-
-#### Output: Profile information and statistics
-
-- - - 
-
-**9. Port Scan**
-
-- **Purpose**: Network reconnaissance
-
-
-#### Example: Check server security
-
-#### Input: example.com OR 192.168.1.1
-
-#### Output: Open ports and services
-
-- - - 
-
-**10. GitHub Recon**
-
-- **Purpose**: Developer intelligence
-
-
-#### Example: Research developer activity
-
-#### Input: github_username
-
-#### Output: Profile info, repositories, activity
-
-- - - 
-
-**11. Website Metadata Scraper**
-
-- **Purpose**: Extract website data
-
-
-#### Example: Analyze multiple websites
-
-#### Input: urls.txt file with target URLs
-
-#### Output: Metadata, emails, entities in JSON/CSV
-
-- - - 
-
-**12. Phone Number Recon**
-
-- **Purpose**: Phone intelligence
-
-
-#### Example: Verify phone number
-
-#### Input: +1234567890
-
-#### Output: Carrier, location, validation
-
-- - - 
-
-**13. Reverse Image Search**
-
-- **Purpose**: Image investigation
-
-
-#### Example: Find image sources
-
-#### Input: (Opens multiple search engines)
-
-#### Output: Browser opens with search results
-
-- - - 
-
-**14. Geospatial Intelligence**
-
-- **Purpose**: Location analysis
-
-
-#### Example: Map coordinates
-
-#### Input: 40.7128,-74.0060 OR "New York City"
-
-#### Output: Satellite and map views
-
-- - - 
-
-**15. Wayback Machine**
-
-- **Purpose**: Historical website data
-
-
-#### Example: Archive research
-
-#### Input: https://example.com
-
-#### Output: Historical snapshots and changes
-
-- - - 
-
-**16. IP Blacklist Check**
-
-- **Purpose**: IP reputation analysis
-
-
-#### Example: Check suspicious IP
-
-#### Input: 192.168.1.100
-
-#### Output: Geolocation and abuse reports
-
-- - - 
-
+[*] Profiles found for john_doe123:
+FACEBOOK        --> https://facebook.com/john_doe123
+TWITTER (X)     --> https://twitter.com/john_doe123
+INSTAGRAM       --> https://instagram.com/john_doe123
+... (30+ platforms)
 # API Setup
 
 **Required APIs for Full Functionality**:
